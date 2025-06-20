@@ -1,30 +1,82 @@
-# Creative portfolio
+# Creative Portfolio
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern and responsive creative portfolio.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/bqcuong2479s-projects/v0-creative-portfolio)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/oSZ5z0OgeK1)
+![Creative Portfolio Preview](./preview.png)
 
-## Overview
+## Live Demo
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Check out the live demo: [https://portfolio-navy-ten-64.vercel.app/](https://portfolio-navy-ten-64.vercel.app/)
+
+## Features
+
+- Responsive design that works on all devices
+- Modern UI with smooth animations
+- Project showcase section
+- About me section
+- Contact information
+- Built with cutting-edge web technologies
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/) - The React framework for production
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vercel](https://vercel.com) - Deployment platform
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/qucuongdev/portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd portfolio
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   pnpm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
+
+## Customization
+
+To customize this portfolio for your own use:
+
+1. Update the content in the appropriate components
+2. Replace placeholder images with your own in the `public` folder
+3. Modify the color scheme in `tailwind.config.js`
+4. Update the metadata in `app/layout.tsx`
 
 ## Deployment
 
-Your project is live at:
+This project is configured for easy deployment on Vercel. To deploy your own version:
 
-**[https://vercel.com/bqcuong2479s-projects/v0-creative-portfolio](https://vercel.com/bqcuong2479s-projects/v0-creative-portfolio)**
+1. Fork this repository
+2. Create a new project on Vercel
+3. Connect your GitHub account and select this repository
+4. Click "Deploy"
 
-## Build your app
+Vercel will automatically deploy your portfolio and provide you with a live URL.
 
-Continue building your app on:
+## Contributing
 
-**[https://v0.dev/chat/projects/oSZ5z0OgeK1](https://v0.dev/chat/projects/oSZ5z0OgeK1)**
+Contributions are welcome! If you have suggestions for improvements, please open an issue or submit a pull request.
 
-## How It Works
+## License
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+This project is open source and available under the [MIT License](./LICENSE).

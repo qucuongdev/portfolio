@@ -1,40 +1,34 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useMobile } from "@/hooks/use-mobile"
+import { motion } from "framer-motion";
+import { useMobile } from "@/hooks/use-mobile";
 
 const experiences = [
   {
-    title: "Senior Frontend Engineer",
-    company: "Tech Innovations Inc.",
-    period: "2021 - Present",
+    title: "Middle Frontend Engineer",
+    company: "Lancs Networks",
+    period: "10/2024 - Present",
     description:
-      "Lead the frontend development team in building a SaaS platform. Implemented new features, improved performance, and mentored junior developers.",
+      "Led the frontend development team in building an XDR and SIEM solution based on OpenSearch and Wazuh. Implemented new features, enhanced performance, and mentored junior developers.",
   },
   {
     title: "Frontend Developer",
-    company: "Digital Solutions Co.",
-    period: "2019 - 2021",
+    company: "TMA Solutions",
+    period: "08/2021 - 10/2024",
     description:
       "Developed responsive web applications using React and TypeScript. Collaborated with designers and backend engineers to deliver high-quality products.",
   },
   {
-    title: "Web Developer",
-    company: "Creative Agency",
-    period: "2017 - 2019",
-    description:
-      "Built websites and web applications for various clients. Worked with HTML, CSS, JavaScript, and WordPress.",
-  },
-  {
     title: "Intern",
-    company: "Startup Hub",
-    period: "2016 - 2017",
-    description: "Assisted in developing web applications and learned modern web development practices.",
+    company: "Anh Quan Tech",
+    period: "06/2021 - 08/2021",
+    description:
+      "Assisted in developing web applications and learned modern web development practices.",
   },
-]
+];
 
 export function Timeline() {
-  const isMobile = useMobile()
+  const isMobile = useMobile();
 
   return (
     <div
@@ -47,10 +41,14 @@ export function Timeline() {
       {experiences.map((experience, index) => (
         <div
           key={index}
-          className={`relative z-10 flex items-center ${index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}
+          className={`relative z-10 flex items-center ${
+            index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+          }`}
         >
           <motion.div
-            className={`w-full md:w-1/2 ${index % 2 === 0 ? "md:pl-10" : "md:pr-10"}`}
+            className={`w-full md:w-1/2 ${
+              index % 2 === 0 ? "md:pl-10" : "md:pr-10"
+            }`}
             initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -85,5 +83,5 @@ export function Timeline() {
         </div>
       ))}
     </div>
-  )
+  );
 }

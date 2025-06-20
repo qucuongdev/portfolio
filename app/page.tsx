@@ -1,17 +1,24 @@
-import Link from "next/link"
-import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react"
+import Link from "next/link";
+import {
+  ArrowRight,
+  Github,
+  Linkedin,
+  Mail,
+  Smartphone,
+  Twitter,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { ProjectCard } from "@/components/project-card"
-import { SkillBadge } from "@/components/skill-badge"
-import { Timeline } from "@/components/timeline"
-import { ContactForm } from "@/components/contact-form"
-import { CreativeHero } from "@/components/creative-hero"
-import { FloatingNav } from "@/components/floating-nav"
-import { MouseFollower } from "@/components/mouse-follower"
-import { ScrollProgress } from "@/components/scroll-progress"
-import { SectionHeading } from "@/components/section-heading"
-import { GlassmorphicCard } from "@/components/glassmorphic-card"
+import { Button } from "@/components/ui/button";
+import { ProjectCard } from "@/components/project-card";
+import { SkillBadge } from "@/components/skill-badge";
+import { Timeline } from "@/components/timeline";
+import { ContactForm } from "@/components/contact-form";
+import { CreativeHero } from "@/components/creative-hero";
+import { FloatingNav } from "@/components/floating-nav";
+import { MouseFollower } from "@/components/mouse-follower";
+import { ScrollProgress } from "@/components/scroll-progress";
+import { SectionHeading } from "@/components/section-heading";
+import { GlassmorphicCard } from "@/components/glassmorphic-card";
 
 export default function Portfolio() {
   return (
@@ -32,23 +39,27 @@ export default function Portfolio() {
           <div className="space-y-6">
             <div className="inline-block">
               <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
-                <span className="relative z-10">Software Engineer & Creative Developer</span>
+                <span className="relative z-10">
+                  Software Engineer & Frontend Developer
+                </span>
                 <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 animate-pulse"></span>
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
               <span className="block">Hi, I'm</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                Shine Kyaw Kyaw Aung
+                Bui Quoc Cuong
               </span>
             </h1>
             <p className="text-xl text-zinc-400 max-w-[600px]">
-              I craft exceptional digital experiences with code, creativity, and a passion for innovation.
+              I craft exceptional digital experiences with code, creativity, and
+              a passion for innovation.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0">
                 <span className="relative z-10 flex items-center">
-                  View Projects <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  View Projects{" "}
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </Button>
@@ -60,7 +71,11 @@ export default function Portfolio() {
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://github.com/qucuongdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button
                   variant="ghost"
                   size="icon"
@@ -70,7 +85,11 @@ export default function Portfolio() {
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/shinekyawkyawaung/" target="_blank" rel="noopener noreferrer">
+              <Link
+                href="https://www.https://www.linkedin.com/in/qucuongdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button
                   variant="ghost"
                   size="icon"
@@ -80,7 +99,11 @@ export default function Portfolio() {
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>
-              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              {/* <Link
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button
                   variant="ghost"
                   size="icon"
@@ -89,8 +112,8 @@ export default function Portfolio() {
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
                 </Button>
-              </Link>
-              <Link href="mailto:hello@example.com">
+              </Link> */}
+              <Link href="mailto:qucuong.dev@gmail.com">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -122,22 +145,27 @@ export default function Portfolio() {
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="About Me" subtitle="My background and journey" />
+          <SectionHeading
+            title="About Me"
+            subtitle="My background and journey"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
                 <img
-                  src="/placeholder.svg?height=600&width=600"
-                  alt="Shine Kyaw Kyaw Aung"
+                  src="/avt.jpg?height=600&width=600"
+                  alt="Bui Quoc Cuong"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full p-6">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                    <span className="text-sm font-medium">Available for work</span>
+                    <span className="text-sm font-medium">
+                      Available for work
+                    </span>
                   </div>
                 </div>
               </div>
@@ -146,40 +174,52 @@ export default function Portfolio() {
             <div className="space-y-6">
               <GlassmorphicCard>
                 <p className="text-lg text-zinc-300">
-                  I'm a passionate software engineer with experience building web applications and digital products. I
-                  specialize in frontend development with React and Next.js, but I'm also comfortable working with
-                  backend technologies.
+                  I'm a passionate software engineer with experience building
+                  web applications and digital products. I specialize in
+                  frontend development with React and Next.js, but I'm also
+                  comfortable working with backend technologies.
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  My journey in tech started with a strong foundation in software development. I've worked with various
-                  companies to create intuitive, performant, and accessible digital experiences.
+                  My journey in tech started with a strong foundation in
+                  software development. I've worked with various companies to
+                  create intuitive, performant, and accessible digital
+                  experiences.
                 </p>
                 <p className="text-lg text-zinc-300 mt-4">
-                  When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
-                  and staying up-to-date with the latest industry trends.
+                  When I'm not coding, you can find me exploring new
+                  technologies, and staying up-to-date with the latest industry
+                  trends.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Name</div>
-                    <div className="font-medium">Shine Kyaw Kyaw Aung</div>
+                    <div className="font-medium">Bui Quoc Cuong</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">hello@example.com</div>
+                    <div className="font-medium">qucuong.dev@gmail.com</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Location</div>
-                    <div className="font-medium">Myanmar</div>
+                    <div className="font-medium">VietNam</div>
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Availability</div>
-                    <div className="font-medium text-green-500">Open to opportunities</div>
+                    <div className="font-medium text-green-500">
+                      Open to opportunities
+                    </div>
+                  </div>
+                  <div className="space-y-1">
+                    <div className="text-sm text-zinc-500">Phone</div>
+                    <div className="font-medium">0389975868</div>
                   </div>
                 </div>
 
                 <div className="mt-8">
-                  <Button className="bg-zinc-800 hover:bg-zinc-700 text-white">Download Resume</Button>
+                  <Button className="bg-zinc-800 hover:bg-zinc-700 text-white">
+                    Download Resume
+                  </Button>
                 </div>
               </GlassmorphicCard>
             </div>
@@ -195,21 +235,24 @@ export default function Portfolio() {
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="My Skills" subtitle="Technologies I work with" />
+          <SectionHeading
+            title="My Skills"
+            subtitle="Technologies I work with"
+          />
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16">
             <SkillBadge name="JavaScript" level={90} />
             <SkillBadge name="TypeScript" level={85} />
             <SkillBadge name="React" level={95} />
             <SkillBadge name="Next.js" level={90} />
-            <SkillBadge name="Node.js" level={80} />
+            <SkillBadge name="Opensearch" level={85} />
             <SkillBadge name="HTML/CSS" level={95} />
             <SkillBadge name="Tailwind CSS" level={90} />
-            <SkillBadge name="GraphQL" level={75} />
+            <SkillBadge name="Ant Design" level={85} />
             <SkillBadge name="PostgreSQL" level={70} />
-            <SkillBadge name="AWS" level={65} />
             <SkillBadge name="Docker" level={60} />
             <SkillBadge name="Git" level={85} />
+            <SkillBadge name="Agent AI" level={85} />
           </div>
         </div>
       </section>
@@ -222,54 +265,63 @@ export default function Portfolio() {
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="Featured Projects" subtitle="Some of my recent work" />
+          <SectionHeading
+            title="Featured Projects"
+            subtitle="Some of my recent work"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
             <ProjectCard
-              title="E-commerce Platform"
+              title="Portfolio Website"
+              description="This portfolio website built with Next.js and Tailwind CSS."
+              tags={[
+                "Next.js",
+                "Tailwind CSS",
+                "Framer Motion",
+                "TypeScript",
+                "React_three",
+              ]}
+              image="/portfolio.jpg?height=400&width=600"
+              demoUrl="https://portfolio-navy-ten-64.vercel.app/"
+              repoUrl="https://github.com/qucuongdev/portfolio"
+            />
+            <ProjectCard
+              title="Bicycle E-commerce Platform"
               description="A full-stack e-commerce platform built with Next.js, Stripe, and Prisma."
               tags={["Next.js", "TypeScript", "Prisma", "Stripe"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              image="/bicycle.jpg?height=400&width=600"
+              demoUrl="https://bicyle-ecommerce.vercel.app/"
+              repoUrl="https://github.com/qucuongdev/bicyle-ecommerce"
             />
             <ProjectCard
-              title="Task Management App"
+              title="Movie Homepage"
               description="A collaborative task management application with real-time updates."
               tags={["React", "Firebase", "Tailwind CSS", "Redux"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              image="/movie.jpg?height=400&width=600"
+              demoUrl="https://movie-homepage-pied.vercel.app/"
+              repoUrl="https://github.com/qucuongdev/movie-homepage"
             />
             <ProjectCard
-              title="AI Content Generator"
+              title="Pizza Website"
               description="An AI-powered content generation tool using OpenAI's GPT models."
               tags={["Next.js", "OpenAI API", "Node.js", "MongoDB"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              image="/pizza.jpg?height=400&width=600"
+              demoUrl="https://react-pizza-website-v1-eight.vercel.app/"
+              repoUrl="https://github.com/qucuongdev/react-pizza-website-v1"
             />
             <ProjectCard
-              title="Fitness Tracker"
+              title="Crypto Tracker"
               description="A mobile-first fitness tracking application with data visualization."
               tags={["React Native", "TypeScript", "D3.js", "Firebase"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
+              image="/crypto.jpg?height=400&width=600"
+              demoUrl="https://react-api-crpyto-tracker-v1.vercel.app/"
+              repoUrl="https://github.com/qucuongdev/react-api-crpyto-tracker-v1"
             />
             <ProjectCard
               title="Weather Dashboard"
               description="A beautiful weather dashboard with forecasts and historical data."
               tags={["React", "Weather API", "Chart.js", "Styled Components"]}
-              image="/placeholder.svg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
-            />
-            <ProjectCard
-              title="Portfolio Website"
-              description="This portfolio website built with Next.js and Tailwind CSS."
-              tags={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
-              image="/placeholder.svg?height=400&width=600"
+              image="/placeholder.jpg?height=400&width=600"
               demoUrl="https://example.com"
               repoUrl="https://github.com"
             />
@@ -285,7 +337,10 @@ export default function Portfolio() {
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="Work Experience" subtitle="My professional journey" />
+          <SectionHeading
+            title="Work Experience"
+            subtitle="My professional journey"
+          />
 
           <div className="mt-16">
             <Timeline />
@@ -313,7 +368,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">hello@example.com</div>
+                    <div className="font-medium">qucuong.dev@gmail.com</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -322,7 +377,9 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">LinkedIn</div>
-                    <div className="font-medium">linkedin.com/in/shinekyawkyawaung</div>
+                    <div className="font-medium">
+                      https://www.linkedin.com/in/qucuongdev/
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -331,7 +388,18 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">GitHub</div>
-                    <div className="font-medium">github.com/shinekyawkyawaung</div>
+                    <div className="font-medium">
+                      https://github.com/qucuongdev
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
+                    <Smartphone className="h-5 w-5 text-purple-400" />
+                  </div>
+                  <div>
+                    <div className="text-sm text-zinc-500">Phone</div>
+                    <div className="font-medium">0389975868</div>
                   </div>
                 </div>
               </div>
@@ -340,7 +408,9 @@ export default function Portfolio() {
                 <h4 className="text-lg font-medium mb-4">Current Status</h4>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                  <span>Available for freelance work and full-time opportunities</span>
+                  <span>
+                    Available for freelance work and full-time opportunities
+                  </span>
                 </div>
               </div>
             </GlassmorphicCard>
@@ -355,15 +425,21 @@ export default function Portfolio() {
         <div className="container flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <Link href="/" className="font-bold text-xl">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Shine</span>
-              <span className="text-white">KKA</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+                Cuong
+              </span>
+              <span className="text-white">Bui</span>
             </Link>
             <p className="text-sm text-zinc-500 mt-2">
-              © {new Date().getFullYear()} Shine Kyaw Kyaw Aung. All rights reserved.
+              © {new Date().getFullYear()} Bui Quoc Cuong. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
-            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://github.com/qucuongdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="ghost"
                 size="icon"
@@ -373,7 +449,11 @@ export default function Portfolio() {
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://www.linkedin.com/in/shinekyawkyawaung/" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://www.https://www.linkedin.com/in/qucuongdev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="ghost"
                 size="icon"
@@ -383,7 +463,11 @@ export default function Portfolio() {
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            {/* <Link
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="ghost"
                 size="icon"
@@ -392,8 +476,8 @@ export default function Portfolio() {
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Button>
-            </Link>
-            <Link href="mailto:hello@example.com">
+            </Link> */}
+            <Link href="mailto:qucuong.dev@gmail.com">
               <Button
                 variant="ghost"
                 size="icon"
@@ -407,5 +491,5 @@ export default function Portfolio() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
