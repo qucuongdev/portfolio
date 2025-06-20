@@ -6,7 +6,7 @@ A modern and responsive creative portfolio.
 
 ## Live Demo
 
-Check out the live demo: [https://portfolio-navy-ten-64.vercel.app/](https://portfolio-navy-ten-64.vercel.app/)
+Check out the live demo: [https://qucuongdev-portfolio.vercel.app/](https://qucuongdev-portfolio.vercel.app/)
 
 ## Features
 

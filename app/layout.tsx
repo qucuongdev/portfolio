@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Cuong_Bui Portfolio",
   description: "Created by Cuong_Bui",
   generator: "Cuong_Bui",
+  icons: {
+    icon: "/briefcase-business.svg",
+  },
 };
 
 export default function RootLayout({

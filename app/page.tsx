@@ -274,15 +274,9 @@ export default function Portfolio() {
             <ProjectCard
               title="Portfolio Website"
               description="This portfolio website built with Next.js and Tailwind CSS."
-              tags={[
-                "Next.js",
-                "Tailwind CSS",
-                "Framer Motion",
-                "TypeScript",
-                "React_three",
-              ]}
+              tags={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
               image="/portfolio.jpg?height=400&width=600"
-              demoUrl="https://portfolio-navy-ten-64.vercel.app/"
+              demoUrl="https://qucuongdev-portfolio.vercel.app/"
               repoUrl="https://github.com/qucuongdev/portfolio"
             />
             <ProjectCard
