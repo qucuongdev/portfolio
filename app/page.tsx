@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   ArrowRight,
@@ -21,6 +23,16 @@ import { SectionHeading } from "@/components/section-heading";
 import { GlassmorphicCard } from "@/components/glassmorphic-card";
 
 export default function Portfolio() {
+  const openGithub = () => {
+    window.open("https://github.com/qucuongdev", "_blank");
+  };
+  const openLinkedin = () => {
+    window.open("https://www.linkedin.com/in/qucuongdev/", "_blank");
+  };
+  const openEmail = () => {
+    window.location.href = "mailto:qucuong.dev@gmail.com";
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-900 to-black text-white overflow-hidden">
       <MouseFollower />
@@ -357,43 +369,63 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
-                    <Mail className="h-5 w-5 text-purple-400" />
+                  <div className="cursor-pointer w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
+                    <Mail
+                      className="h-5 w-5 text-purple-400"
+                      onClick={() => openEmail()}
+                    />
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">qucuong.dev@gmail.com</div>
+                    <div
+                      className="cursor-pointer font-medium"
+                      onClick={() => openEmail()}
+                    >
+                      qucuong.dev@gmail.com
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
-                    <Linkedin className="h-5 w-5 text-purple-400" />
+                    <Linkedin
+                      className="cursor-pointer h-5 w-5 text-purple-400"
+                      onClick={() => openLinkedin()}
+                    />
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">LinkedIn</div>
-                    <div className="font-medium">
+                    <div
+                      className="cursor-pointer font-medium"
+                      onClick={() => openLinkedin()}
+                    >
                       https://www.linkedin.com/in/qucuongdev/
                     </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
-                    <Github className="h-5 w-5 text-purple-400" />
+                    <Github
+                      className="cursor-pointer h-5 w-5 text-purple-400"
+                      onClick={() => openGithub()}
+                    />
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">GitHub</div>
-                    <div className="font-medium">
+                    <div
+                      className="cursor-pointer font-medium"
+                      onClick={() => openGithub()}
+                    >
                       https://github.com/qucuongdev
                     </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
+                  <div className="cursor-pointer w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
                     <Smartphone className="h-5 w-5 text-purple-400" />
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Phone</div>
-                    <div className="font-medium">0389975868</div>
+                    <div className="cursor-pointer font-medium">0389975868</div>
                   </div>
                 </div>
               </div>
