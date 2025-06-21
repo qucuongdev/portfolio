@@ -98,7 +98,7 @@ export default function Portfolio() {
                 </Button>
               </Link>
               <Link
-                href="https://www.https://www.linkedin.com/in/qucuongdev/"
+                href="https://www.linkedin.com/in/qucuongdev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
