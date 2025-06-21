@@ -6,7 +6,7 @@ A modern and responsive creative portfolio.
 
 ## Live Demo
 
-Check out the live demo: [https://qucuongdev-portfolio.vercel.app/](https://qucuongdev-portfolio.vercel.app/)
+Check out the live demo: [https://portfolio-qucuongdev.vercel.app/](https://portfolio-qucuongdev.vercel.app/)
 
 ## Features
 

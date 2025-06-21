@@ -276,8 +276,16 @@ export default function Portfolio() {
               description="This portfolio website built with Next.js and Tailwind CSS."
               tags={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
               image="/portfolio.jpg?height=400&width=600"
-              demoUrl="https://qucuongdev-portfolio.vercel.app/"
+              demoUrl="https://portfolio-qucuongdev.vercel.app/"
               repoUrl="https://github.com/qucuongdev/portfolio"
+            />
+            <ProjectCard
+              title="Weather Dashboard"
+              description="A beautiful weather dashboard with forecasts and historical data."
+              tags={["React", "Weather API", "Chart.js", "Styled Components"]}
+              image="/siem.jpg?height=400&width=600"
+              demoUrl="https://siem-one.vercel.app/"
+              repoUrl="https://github.com"
             />
             <ProjectCard
               title="Bicycle E-commerce Platform"
@@ -310,14 +318,6 @@ export default function Portfolio() {
               image="/crypto.jpg?height=400&width=600"
               demoUrl="https://react-api-crpyto-tracker-v1.vercel.app/"
               repoUrl="https://github.com/qucuongdev/react-api-crpyto-tracker-v1"
-            />
-            <ProjectCard
-              title="Weather Dashboard"
-              description="A beautiful weather dashboard with forecasts and historical data."
-              tags={["React", "Weather API", "Chart.js", "Styled Components"]}
-              image="/placeholder.jpg?height=400&width=600"
-              demoUrl="https://example.com"
-              repoUrl="https://github.com"
             />
           </div>
         </div>
