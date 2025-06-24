@@ -8,6 +8,7 @@ import {
   Mail,
   Smartphone,
   Twitter,
+  FileText,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -31,6 +32,9 @@ export default function Portfolio() {
   };
   const openEmail = () => {
     window.location.href = "mailto:qucuong.dev@gmail.com";
+  };
+  const openResume = () => {
+    window.open("/BuiQuocCuong_FrontEndDeveloper_CV.pdf", "_blank");
   };
 
   return (
@@ -68,7 +72,10 @@ export default function Portfolio() {
               a passion for innovation.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0">
+              <Button
+                onClick={openGithub}
+                className="relative overflow-hidden group bg-gradient-to-r from-purple-500 to-pink-500 border-0"
+              >
                 <span className="relative z-10 flex items-center">
                   View Projects{" "}
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -76,10 +83,11 @@ export default function Portfolio() {
                 <span className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </Button>
               <Button
+                onClick={openResume}
                 variant="outline"
                 className="border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-500"
               >
-                Contact Me
+                Resume
               </Button>
             </div>
             <div className="flex gap-4 pt-4">
@@ -229,7 +237,11 @@ export default function Portfolio() {
                 </div>
 
                 <div className="mt-8">
-                  <Button className="bg-zinc-800 hover:bg-zinc-700 text-white">
+                  <Button
+                    onClick={openResume}
+                    className="bg-zinc-800 hover:bg-zinc-700 text-white flex items-center gap-2"
+                  >
+                    <FileText className="h-4 w-4" />
                     Download Resume
                   </Button>
                 </div>
@@ -286,15 +298,15 @@ export default function Portfolio() {
             <ProjectCard
               title="Portfolio Website"
               description="This portfolio website built with Next.js and Tailwind CSS."
-              tags={["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"]}
+              tags={["Next.js", "Tailwind CSS", "TypeScript", "Three.js"]}
               image="/portfolio.jpg?height=400&width=600"
               demoUrl="https://portfolio-qucuongdev.vercel.app/"
               repoUrl="https://github.com/qucuongdev/portfolio"
             />
             <ProjectCard
-              title="Weather Dashboard"
-              description="A beautiful weather dashboard with forecasts and historical data."
-              tags={["React", "Weather API", "Chart.js", "Styled Components"]}
+              title="SIEM Dashboard"
+              description="A demo SIEM dashboard showcasing alerts, basic analytics, and interactive chart components.."
+              tags={["Next.js", "Chart.js", "Tailwind CSS", "Shadcn UI"]}
               image="/siem.jpg?height=400&width=600"
               demoUrl="https://siem-one.vercel.app/"
               repoUrl="https://github.com"
@@ -302,7 +314,7 @@ export default function Portfolio() {
             <ProjectCard
               title="Bicycle E-commerce Platform"
               description="A full-stack e-commerce platform built with Next.js, Stripe, and Prisma."
-              tags={["Next.js", "TypeScript", "Prisma", "Stripe"]}
+              tags={["JavaScript", "HTML", "CSS"]}
               image="/bicycle.jpg?height=400&width=600"
               demoUrl="https://bicyle-ecommerce.vercel.app/"
               repoUrl="https://github.com/qucuongdev/bicyle-ecommerce"
@@ -310,7 +322,7 @@ export default function Portfolio() {
             <ProjectCard
               title="Movie Homepage"
               description="A collaborative task management application with real-time updates."
-              tags={["React", "Firebase", "Tailwind CSS", "Redux"]}
+              tags={["JavaScript", "HTML", "CSS"]}
               image="/movie.jpg?height=400&width=600"
               demoUrl="https://movie-homepage-pied.vercel.app/"
               repoUrl="https://github.com/qucuongdev/movie-homepage"
@@ -318,7 +330,7 @@ export default function Portfolio() {
             <ProjectCard
               title="Pizza Website"
               description="An AI-powered content generation tool using OpenAI's GPT models."
-              tags={["Next.js", "OpenAI API", "Node.js", "MongoDB"]}
+              tags={["React.js", "CSS", "Tailwind CSS"]}
               image="/pizza.jpg?height=400&width=600"
               demoUrl="https://react-pizza-website-v1-eight.vercel.app/"
               repoUrl="https://github.com/qucuongdev/react-pizza-website-v1"
@@ -326,7 +338,7 @@ export default function Portfolio() {
             <ProjectCard
               title="Crypto Tracker"
               description="A mobile-first fitness tracking application with data visualization."
-              tags={["React Native", "TypeScript", "D3.js", "Firebase"]}
+              tags={["React.js", "CSS", "Tailwind CSS"]}
               image="/crypto.jpg?height=400&width=600"
               demoUrl="https://react-api-crpyto-tracker-v1.vercel.app/"
               repoUrl="https://github.com/qucuongdev/react-api-crpyto-tracker-v1"

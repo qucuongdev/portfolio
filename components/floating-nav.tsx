@@ -40,6 +40,10 @@ export function FloatingNav() {
     }
   };
 
+  const openResume = () => {
+    window.open("/BuiQuocCuong_FrontEndDeveloper_CV.pdf", "_blank");
+  };
+
   return (
     <>
       <motion.div
@@ -93,6 +97,7 @@ export function FloatingNav() {
                 </Link>
               ))}
               <Button
+                onClick={openResume}
                 size="sm"
                 className="ml-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0"
               >
@@ -124,7 +129,10 @@ export function FloatingNav() {
                 {item.name}
               </Link>
             ))}
-            <Button className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0">
+            <Button
+              onClick={openResume}
+              className="mt-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0"
+            >
               Resume
             </Button>
           </div>
