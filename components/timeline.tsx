@@ -5,14 +5,14 @@ import { useMobile } from "@/hooks/use-mobile";
 
 const experiences = [
   {
-    title: "Front-end Developer",
+    title: "Frontend Developer",
     company: "Lancs Networks",
     period: "10/2024 - Present",
     description:
       "Led the frontend development team in building an XDR and SIEM solution based on OpenSearch and Wazuh. Implemented new features, enhanced performance, and mentored junior developers.",
   },
   {
-    title: "Front-end Developer",
+    title: "Frontend Developer",
     company: "TMA Solutions",
     period: "08/2021 - 10/2024",
     description:
