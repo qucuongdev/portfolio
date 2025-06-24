@@ -232,7 +232,7 @@ export default function Portfolio() {
                   </div>
                   <div className="space-y-1">
                     <div className="text-sm text-zinc-500">Phone</div>
-                    <div className="font-medium">0389975868</div>
+                    <div className="font-medium">+84389975868</div>
                   </div>
                 </div>
 
@@ -437,7 +437,9 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Phone</div>
-                    <div className="cursor-pointer font-medium">0389975868</div>
+                    <div className="cursor-pointer font-medium">
+                      +84389975868
+                    </div>
                   </div>
                 </div>
               </div>
